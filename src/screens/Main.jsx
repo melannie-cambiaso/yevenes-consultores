@@ -1,6 +1,6 @@
 import React from "react";
 import { Header } from "../components/Header";
-import { Route, Routes } from "react-router-dom";
+import { Route, Router } from "react-router-dom";
 import { HomePage } from "./HomePage";
 import { SectionImage } from "../components/SectionImage";
 import { AboutPage } from "./AboutPage";
@@ -16,7 +16,7 @@ export const Main = () => {
     <>
       <Header />
       <SectionImage />
-      <Routes>
+      <Router basename="yevenes-consultores">
         <Route element={<HomePage />} path={"/"} />
         <Route element={<AboutPage />} path={"/about"} />
         <Route element={<ContactPage />} path={"/contact"} />
@@ -31,7 +31,7 @@ export const Main = () => {
           path={"/services/audit-complementary"}
         />
         <Route element={<Managment />} path={"/services/managment"} />
-      </Routes>
+      </Router>
     </>
   );
 };

@@ -10,7 +10,7 @@ import "../src/scss/styles.scss";
 import * as bootstrap from "bootstrap";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <BrowserRouter basename="yevenes-consultores">
+  <BrowserRouter>
     <React.StrictMode>
       <App />
     </React.StrictMode>
