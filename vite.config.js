@@ -12,6 +12,6 @@ export default defineConfig({
   },
   base: "/yevenes-consultores/",
   build: {
-    outDir: "../docs",
+    outDir: "docs",
   },
 });
