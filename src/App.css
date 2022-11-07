@@ -3,3 +3,10 @@ html {
     margin: 0 !important;
     padding: 0 !important;
 }
+
+.dropdown .dropdown__list {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: red;
+}
